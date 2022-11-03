@@ -40,7 +40,7 @@ Let's start by defining a function `fahr_to_celsius` that converts temperatures 
 def fahr_to_celsius(temp):
     return ((temp - 32) * (5/9))
 ```
-![image](../images/python-function.svg)
+![image](images/python-function.svg)
 
 The function definition opens with the keyword `def` followed by the name of the function (`fahr_to_celsius`) and a parenthesized list of parameter names (`temp`). The body of the function — the statements that are executed when it runs — is indented below the definition line. The body concludes with a `return` keyword followed by the return value.
 

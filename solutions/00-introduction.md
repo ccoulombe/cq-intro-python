@@ -115,7 +115,7 @@ To see how effective the treatment is we would like to:
 1. Calculate the average inflammation per day across all patients.
 2. Plot the result to discuss and share with colleagues.
 
-![image](../images/lesson-overview.svg)
+![image](images/lesson-overview.svg)
 
 ## Data format
 The data sets are stored in comma-separated values (CSV) format:

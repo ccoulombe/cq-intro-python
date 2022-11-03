@@ -35,7 +35,7 @@ jupyter:
 
 ***
 
-Python list documentation: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
+Python list documentation: https://docs.python.org/3/tutoridatastructures.html#more-on-lists
 
 # Python lists
 Unlike numpy arrays, lists are built into the language so we do not have to load a library to use them. We create a list by putting values inside square brackets and separating the values with commas:

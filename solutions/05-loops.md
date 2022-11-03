@@ -77,7 +77,7 @@ for element in sequence:
 
 A representation of the example above is:
 
-![image](../images/loops_image_num.png)
+![image](images/loops_image_num.png)
 
 The variable name can be anything, such as `banana`, but it is preferable to choose meaningful names:
 ```python

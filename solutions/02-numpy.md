@@ -50,7 +50,7 @@ Importing a library makes its functionnalities available for us to use.
 Once we’ve imported the library, we can ask the library to read our data file for us:
 
 ```python
-numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 ```
 
 
@@ -58,7 +58,7 @@ Our call to `numpy.loadtxt` read our file but didn’t save the data in memory. 
 In order to save the data in memory, we need to assign the returned data to a variable, like we assigned a value to a variable:
 
 ```python
-data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 ```
 
 
@@ -106,7 +106,7 @@ print('first value in data:', data[0, 0])
 
 
 Programming languages like Fortran, MATLAB and R start counting at 1 because that’s what human beings have done for thousands of years. Languages in the C family (including C++, Java, Perl, and Python) count from 0 because it represents an offset from the first value in the array (the second value is offset by one index from the first value). As a result, if we have an M×N array in Python, its indices go from 0 to M-1 on the first axis and 0 to N-1 on the second.
-![image](../images/python-zero-index.svg)
+![image](images/python-zero-index.svg)
 
 # Slicing data
 Above we selected a single element, but we can select whole sections or slice. For instance, we can select the first ten days (columns) for the first four patients (rows) with:
@@ -183,7 +183,7 @@ print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
 
 
 Operations can be done on rows or columns, which we call _axis_.
-![image](../images/python-operations-across-axes.png)
+![image](images/python-operations-across-axes.png)
 
 With _axis_, we can get the maximum inflammation for each patient over all days (left) or the average for each day (right).
 
@@ -212,7 +212,7 @@ print(numpy.mean(data, axis=1))
 #### 1. Slicing
 
 ```python
-data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 ```
 
 Print the first patient, first inflammation value:

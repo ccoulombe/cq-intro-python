@@ -41,7 +41,7 @@ import matplotlib.pyplot
 We also need to load the data in this notebook:
 ```python
 import numpy
-data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 ```
 
 We can now plot our data:
@@ -76,7 +76,7 @@ We can group similar plots in a single figure using subplots. Here's a complete 
 import numpy
 import matplotlib.pyplot
 
-data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+data = numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 
 fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
 

@@ -115,7 +115,7 @@ print('done')
 ```
 The above can be visulize with:
 
-![image](../images/python-flowchart-conditional.png)
+![image](images/python-flowchart-conditional.png)
 
 We can also tests several conditions using an `elif` which means _else if_.
 ```python tags=["raises-exception"]
