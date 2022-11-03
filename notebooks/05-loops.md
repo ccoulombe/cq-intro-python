@@ -33,7 +33,7 @@ jupyter:
 
 ***
 An example task that we might want to repeat is accessing numbers in a list, which we will do by printing each number on a line of its own.
-```python
+```python tags=["empty"]
 odds = [1, 3, 5, 7]
 ```
 In Python, a list is basically an ordered collection of elements, and every element has a unique number associated with it — its index. This means that we can access elements in a list using their indices. For example, we can get the first number in the list `odds`, by using `odds[0]`. One way to print each number is to use four print statements:
@@ -58,12 +58,12 @@ This is a bad approach for three reasons:
 3. **Fragile.** If we use it with a list that has more elements than what we initially envisioned, it will only display part of the list’s elements. A shorter list, on the other hand, will cause an error because it will be trying to display elements of the list that do not exist.
 
 Using a `for` loop to repeat an operation is a better approach:
-```python
+```python tags=["empty"]
 for num in odds:
     print(num)
 ```
 and more robust, for instance if the list is longer:
-```python
+```python tags=["empty"]
 odds = [1, 3, 5, 7, 9, 11]
 for num in odds:
     print(num)
@@ -104,7 +104,7 @@ print('after the loop, name is', name)
 ```
 
 A common operation is finding the length of an object. Python has a built-in function named `len`:
-```python
+```python tags=["empty"]
 print(len([0, 1, 2, 3]))
 ```
 Another built-in function named `range` can be very useful with `for` loops. This function creates a sequence of integers.
@@ -128,7 +128,7 @@ for i in range(3, 22, 3):
 #### 2. Summing a list
 Write a loop that calculates the sum of elements in a list by adding each element and printing the final value.
 `[124, 402, 36]` prints `562`.
-```python
+```python tags=["empty"]
 summed = 0
 for num in [124, 402, 36]:
     summed = summed + num

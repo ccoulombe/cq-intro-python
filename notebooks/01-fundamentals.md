@@ -36,7 +36,7 @@ Any Python interpreter can be used as a calculator:
 10 + 20
 ```
 
-```python
+```python tags=["empty"]
 2 * 3
 ```
 
@@ -99,7 +99,7 @@ Some types of date are **immutable** objects, meaning that the state of the obje
 
 
 In the example above, the variable `weight_kg` has an integer value of `60`. If we want to more precisely track the weight of our patient, we can use a floating point value by executing:
-```python
+```python tags=["empty"]
 weight_kg = 60.3
 ```
 
@@ -110,7 +110,7 @@ patient_id = '001'
 
 ## Using Variables in Python
 Once we have data stored with variable names, we can make use of it in calculations. We may want to store our patient’s weight in pounds as well as kilograms:
-```python
+```python tags=["empty"]
 weight_lb = 2.2 * weight_kg
 ```
 
@@ -122,9 +122,10 @@ patient_id = 'inflam_' + patient_id
 ## Built-in functions
 A function is:
 > A named group of instructions that is executed when the function’s name is used in the code. Occurrence of a function name in the code is a function call. Functions may process input arguments and return the result back. Functions may also be used for logically grouping together pieces of code. In such cases, they don’t need to return any meaningful value and can be written without the return statement completely. Such functions return a special value `None`, which is a way of saying “nothing”.
+[Reference](https://swcarpentry.github.io/python-novice-inflammation/reference.html#function)
 
-Python has with several built-in functions. In order to display information to the screen, we can use the `print` function:
-```python
+Python has several built-in functions. In order to display information to the screen, we can use the `print` function:
+```python tags=["empty"]
 print(weight_lb)
 print(patient_id)
 ```
@@ -181,7 +182,3 @@ distance = 10.5
 * Variables are created on demand whenever a value is assigned to them.
 * Use `print(something)` to display the value of `something`.
 * Built-in functions are always available to use.
-
-```python
-
-```

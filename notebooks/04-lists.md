@@ -39,7 +39,7 @@ Python list documentation: https://docs.python.org/3/tutorial/datastructures.htm
 
 # Python lists
 Unlike numpy arrays, lists are built into the language so we do not have to load a library to use them. We create a list by putting values inside square brackets and separating the values with commas:
-```python
+```python tags=["empty"]
 odds = []         # empty list
 odds = [1,3,5,7]  # a list with 4 elements
 print(odds)       # a list is represented with []
@@ -61,13 +61,13 @@ Recall that slicing is not an inclusive range: `[from:to[`
 |--------|----|----|----|----|
 |indexes | 0  | 1  | 2  | 3  |
 
-```python
+```python tags=["empty"]
 print(odds[0:2])
 ```
 ```python
 print(odds[1:])
 ```
-```python
+```python tags=["empty"]
 print(odds[:3])
 ```
 ```python
@@ -82,7 +82,7 @@ We can also start from the end with the negative indexing:
 |indexes | -4 | -3 | -2 | -1 |
 
 
-```python
+```python tags=["empty"]
 print(odds[-1])
 ```
 ```python
@@ -91,7 +91,7 @@ print(odds[-3:-1])
 ```python
 print(odds[:-3])
 ```
-```python
+```python tags=["empty"]
 print(odds[-4:])
 ```
 
@@ -119,7 +119,7 @@ name[0] = 'd'
 We've seen previously that strings are *immutable* and lists are *mutable*.
 
 We also need to be careful when modyfing data in-place. What happens if two variables refers to the same list?
-```python
+```python tags=["empty"]
 other = odds # other and odds point the same data in memory
 ```
 Did we really make a copy?
@@ -131,7 +131,7 @@ print(odds)
 No since both variable from the assignation points to the same data in memory.
 In order to effectively copy we construct another list from the original one:
 ```python
-other = list(odds) # or odds.copy()
+other = odds.copy() # or list(odds)
 odds[0] = 1
 print(other)
 print(odds)
@@ -179,7 +179,7 @@ print(chromosomes[-1])
 ```
 
 We can even add a list as an element:
-```python
+```python tags=["empty"]
 odds.append(chromosomes)
 print(odds)
 ```
@@ -199,7 +199,7 @@ Answer:`111 8 89`
 ```python
 nums = [1, 111, 2, 3, 5, 8, 13, 2, 34, 55, 89]
 ```
-```python
+```python tags=["empty"]
 # print second, sixth and last element
 print(nums[1], nums[5], nums[-1])
 ```

@@ -34,7 +34,7 @@ jupyter:
 # Visualizing data
 
 In order to visualize data, we first need to import the library:
-```python
+```python tags=["empty"]
 import matplotlib.pyplot
 ```
 

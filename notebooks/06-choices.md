@@ -35,10 +35,10 @@ jupyter:
 In life we make choices, it is not different in Python. We can express conditions with the `if` statement that, in turn, can be expressed by two values `True` or `False`, which are called `Booleans`.
 
 Documentation: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
-```python
+```python tags=["empty"]
 True
 ```
-```python
+```python tags=["empty"]
 False
 ```
 We can also construct `Booleans` from other values. For example, `False` and `True` are the equivalent of `0` and `1` respectively. 
@@ -88,13 +88,13 @@ print(1 == 1 and 1 != 2)
 ```
 
 What will the following expression returns?
-```python
+```python tags=["empty"]
 True and True
 ```
 ```python
 True and False and True
 ```
-```python
+```python tags=["empty"]
 False or True
 ```
 ```python
@@ -105,7 +105,7 @@ True or False and True
 ```
 
 With an `if` statement, we can decide on actions to do based on conditions:
-```python
+```python tags=["empty"]
 num = 37
 if num > 100:
     print('greater')
@@ -151,7 +151,7 @@ Answer:
 2
 3
 ```
-```python
+```python tags=["empty"]
 for i in range(10):
     if i < 4:
         print(i)

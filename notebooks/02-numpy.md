@@ -41,7 +41,7 @@ Numpy documentation: https://numpy.org/doc/stable/reference/index.html
 
 In order to load data, we need to access (import in Python terminology) a library named [`numpy`](https://numpy.org/doc/stable/). We first need to import it:
 
-```python
+```python tags=["empty"]
 import numpy
 ```
 
@@ -64,7 +64,7 @@ data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
 
 If we want to have a look at the data, we can print the variable's value:
 
-```python
+```python tags=["empty"]
 print(data)
 ```
 
@@ -77,14 +77,14 @@ print(type(data))
 
 We can also find out the type of the data contained in the array:
 
-```python
+```python tags=["empty"]
 print(data.dtype)
 ```
 
 
 Or we can see the array's shape:
 
-```python
+```python tags=["empty"]
 print(data.shape)
 ```
 
@@ -92,7 +92,7 @@ print(data.shape)
 To print one element from the array, we must provide an index in square brackets (`[]`) after the variable name.
 The inflammation data has two dimensions, so we will need to use two indices to refer to one specific value:
 
-```python
+```python tags=["empty"]
 print('middle value in data:', data[30, 20])
 ```
 The expression `data[30, 20]` accesses the element at row `30` and column `20`.
@@ -111,7 +111,7 @@ Programming languages like Fortran, MATLAB and R start counting at 1 because tha
 # Slicing data
 Above we selected a single element, but we can select whole sections or slice. For instance, we can select the first ten days (columns) for the first four patients (rows) with:
 
-```python
+```python tags=["empty"]
 print(data[0:4, 0:10])
 ```
 The slicing is not an inclusive range: `[from:to[`, for example:
@@ -140,14 +140,14 @@ print(small)
 # Analyzing data
 Numpy library contains several useful functions to work with arrays. For example, we can calculate `data`'s [mean](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.mean.html) value:
 
-```python
+```python tags=["empty"]
 print(numpy.mean(data))
 ```
 
 
 We could also calculate the [maximum](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.max.html), [minimal](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.min.html) and [standard deviation](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.std.html) of the data:
 
-```python
+```python tags=["empty"]
 print('maximum inflammation:', numpy.max(data))
 print('minimum inflammation:', numpy.min(data))
 print('standard deviation:', numpy.std(data))
@@ -157,14 +157,14 @@ print('standard deviation:', numpy.std(data))
 At any given point, we can learn more about a function by using some help magic 🪄 or tab completion.
 For instance, we could look the documentation for the `std` function:
 
-```python tags=[] scrolled=true
+```python scrolled=true tags=[]
 help(numpy.std)
 ```
 
 When analyzing data we often want to look at variations in statistical values, such as the maximum inflammation per patient or the average inflammation per day. One way to do this is to create a new temporary array of the data we want, then ask it to do the calculation. 
 How would we assign the data of the first patient to a variable `patient_0`?:
 
-```python
+```python tags=["empty"]
 patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (columns)
 ```
 
@@ -189,7 +189,7 @@ With _axis_, we can get the maximum inflammation for each patient over all days 
 
 For instance, calculate the average for each day. To which graphic does this correspond?
 
-```python
+```python tags=["empty"]
 print(numpy.mean(data, axis=0))
 ```
 
@@ -210,23 +210,26 @@ print(numpy.mean(data, axis=1))
 
 # Exercices
 #### 1. Slicing
-From the `data` variable defined previously.
-
- Print the first patient, first inflammation value:
 
 ```python
+data = numpy.loadtxt(fname='../data/inflammation-01.csv', delimiter=',')
+```
+
+Print the first patient, first inflammation value:
+
+```python tags=["empty"]
 print(data[0,0])
 ```
 
 Print the second patient, 5th inflammation value:
 
-```python
+```python tags=["empty"]
 print(data[1,4])
 ```
 
 Print the first three patients, their first fourth inflammation values:
 
-```python
+```python tags=["empty"]
 data[0:3, 0:4]
 ```
 
