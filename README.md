@@ -41,6 +41,10 @@ Create executed HTML|ipynb solution files for the instructor
 ```bash
 jupyter nbconvert --to {html|notebook} --execute solutions/*.ipynb
 ```
+Or overwrite in-place notebooks since their content origin from the markdown
+```bash
+jupyter nbconvert --to notebook --inplace --execute solutions/*.ipynb
+```
 
 ### 3. Empty notebooks for participants
 Empty all solutions notebooks and output in current directory
