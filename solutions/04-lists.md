@@ -174,7 +174,7 @@ We've seen that lists are indexed and can be sliced using `[start:end:step]` not
 ```python
 print(name[0:10])
 print(name[11:])
-print(chromosomes[0:3])
+print(chromosomes[0:2])
 print(chromosomes[-1])
 ```
 
