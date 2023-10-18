@@ -24,3 +24,20 @@ pip install -r requirements.txt  # or requirements-dev.txt if developping
 ```bash
 jupyter lab --ip=127.0.0.1
 ```
+
+## Development
+```bash
+pip install -r requirements-dev.txt
+```
+
+### 1. Sync markdown to notebooks
+Synchronize solutions markdown to their associated notebooks
+```bash
+jupytext --sync solutions/*.md
+```
+
+### 2. Empty notebooks for participants
+Empty all solutions notebooks and output in current directory
+```bash
+python scripts/participant_empty.py solutions/*.ipynb -o .
+```
