@@ -36,7 +36,13 @@ Synchronize solutions markdown to their associated notebooks
 jupytext --sync solutions/*.md
 ```
 
-### 2. Empty notebooks for participants
+### 2. Create HTML
+Create executed HTML|ipynb solution files for the instructor
+```bash
+jupyter nbconvert --to {html|notebook} --execute solutions/*.ipynb
+```
+
+### 3. Empty notebooks for participants
 Empty all solutions notebooks and output in current directory
 ```bash
 python scripts/participant_empty.py solutions/*.ipynb -o .
