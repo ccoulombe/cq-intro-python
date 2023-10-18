@@ -3,4 +3,5 @@
 *.jpg
 *.pyc
 *.html
+*.nbconvert.ipynb
 .ipynb_checkpoints/
