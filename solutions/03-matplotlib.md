@@ -31,6 +31,8 @@ jupyter:
 
 ***
 
+Matplotlib documentation: https://matplotlib.org/stable/
+
 # Visualizing data
 
 In order to visualize data, we first need to import the library:
