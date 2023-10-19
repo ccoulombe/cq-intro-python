@@ -133,3 +133,13 @@ Each number represents the number of inflammation bouts that a particular patien
 For example, value `6` at row `3` column `7` of the data set above means that the third patient was experiencing inflammation six times on the seventh day of the clinical study.
 
 In order to analyze this data and report to our colleagues, we’ll have to learn a little bit about programming.
+
+# A word on Copilot or ChatGPT
+While it may seem that using co-pilot or ChatGPT may help, it actually hinder learning by providing part of code that may or may not make sense to you.
+
+It can be useful to write test cases to validate your code, and help think of corner cases, but could also hinder your development.
+<div class="alert alert-success">
+  <strong>Do not use it while learning programming!</strong>
+</div>
+
+**Bottom line** : it is best to understand what these tools suggests, before using them.
