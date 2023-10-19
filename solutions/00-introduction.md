@@ -30,7 +30,7 @@ Thanks to the Carpentries, part of this material was adapted from: http://swcarp
 ## Python
 - a high-level scripting language.
 
-- designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+- designed to be highly readable. It uses English keywords frequently whereas other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
 - interpreted: Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. Grouping of statements is done by indentation instead of beginning and ending brackets (as in C or C++).
 
@@ -64,7 +64,7 @@ The notebook extends the console-based approach to interactive computing in a qu
 * The ability to easily include mathematical notation within markdown cells using LaTeX, and rendered natively by [MathJax](https://www.mathjax.org/).
 
 ### Notebook documents
-Notebook documents contains the inputs and outputs of a interactive session as well as additional text that accompanies the code but is not meant for execution. In this way, notebook files can serve as a complete computational record of a session, interleaving executable code with explanatory text, mathematics, and rich representations of resulting objects. These documents are internally JSON files and are saved with the `.ipynb` extension. Since JSON is a plain text format, they can be version-controlled and shared with colleagues.
+Notebook documents contain the inputs and outputs of an interactive session as well as additional text that accompanies the code but is not meant for execution. In this way, notebook files can serve as a complete computational record of a session, interleaving executable code with explanatory text, mathematics, and rich representations of resulting objects. These documents are internally JSON files and are saved with the `.ipynb` extension. Since JSON is a plain text format, they can be version-controlled and shared with colleagues.
 
 Notebooks may be exported to a range of static formats, including HTML (for example, for blog posts), reStructuredText, LaTeX, PDF, and slide shows, via the nbconvert command.
 

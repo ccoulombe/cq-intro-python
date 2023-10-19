@@ -53,7 +53,7 @@ matplotlib.pyplot.show()
 ```
 Each row in the heat map corresponds to a patient in the clinical trial dataset, and each column corresponds to a day in the dataset. Blue pixels in this heat map represent low values, while yellow pixels represent high values. As we can see, the general number of inflammation flare-ups for the patients rises and falls over a 40-day period.
 
-We can plot other kind of graphs, for instance the average inflammation per day accross all patients:
+We can plot other kinds of graphs, for instance the average inflammation per day across all patients:
 ```python
 ave_inflammation = numpy.mean(data, axis=0)
 ave_plot = matplotlib.pyplot.plot(ave_inflammation)

@@ -63,7 +63,7 @@ def celsius_to_kelvin(temp_c):
 print('freezing point of water in Kelvin:', celsius_to_kelvin(0.))
 ```
 
-And lets not forget about converting Fahrenheit to Kelvin! We can reuse our previous functions to compose a new function:
+And let’s not forget about converting Fahrenheit to Kelvin! We can reuse our previous functions to compose a new function:
 ```python
 def fahr_to_kelvin(temp_f):
     temp_c = fahr_to_celsius(temp_f)
@@ -141,7 +141,7 @@ fahr_to_celcius(temp=0)
 
 # Exercises
 #### 1.
-Base on the following function:
+Based on the following function:
 ```python tags=[]
 def display(a, b, c):
     print('a:', a, 'b:', b, 'c:', c)
@@ -184,7 +184,7 @@ def wrap(value, wrapper='*'):
 
 Assert the function is correct:
 ```python tags=["empty"]
-# Assert that our function are correct
+# Assert that our function is correct
 assert wrap('1') == "*1*"
 assert wrap('1', '+') == "+1+"
 ```
@@ -227,4 +227,4 @@ print(k)
 * Put docstrings in functions to provide help for that function.
 * Specify default values for parameters when defining a function using `name=value` in the parameter list.
 * Parameters can be passed by matching based on name, by position, or by omitting them (in which case the default value is used).
-* Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behavior.
+* Put code whose parameters change frequently in a function, then call it with different parameter values to customize its behaviour.

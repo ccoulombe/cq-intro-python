@@ -52,7 +52,7 @@ print(bool(1))
 print(bool(0))
 print(bool('Hello'))  # Anything other than zero length string is True
 ```
-We can also express conditions with relationnal operators:
+We can also express conditions with relational operators:
 ```python
 print(1 == 1)
 print(2 != 1)
@@ -113,7 +113,7 @@ else:
     print('not greater')
 print('done')
 ```
-The above can be visulize with:
+The above can be visualized with:
 
 ![image](images/python-flowchart-conditional.png)
 

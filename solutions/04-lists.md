@@ -118,7 +118,7 @@ name[0] = 'd'
 
 We've seen previously that strings are *immutable* and lists are *mutable*.
 
-We also need to be careful when modyfing data in-place. What happens if two variables refers to the same list?
+We also need to be careful when modifying data in-place. What happens if two variables refer to the same list?
 ```python tags=["empty"]
 other = odds # other and odds point the same data in memory
 ```
@@ -129,7 +129,7 @@ print(other)
 print(odds)
 ```
 No since both variable from the assignation points to the same data in memory.
-In order to effectively copy we construct another list from the original one:
+In order to effectively copy, we construct another list from the original one:
 ```python
 other = odds.copy() # or list(odds)
 odds[0] = 1
@@ -137,7 +137,7 @@ print(other)
 print(odds)
 ```
 
-A `list` also has methods. We can use `append` to add element at the end of the list. Or see `help(list)` to get the list of available methods.
+A `list` also has methods. We can use `append` to add an element at the end of the list. Or see `help(list)` to get the list of available methods.
 ```python
 odds.append(9)
 print(odds)
@@ -157,7 +157,7 @@ print(odds)
 odds.reverse()
 print(odds)
 ```
-Or we could use the buit-in function `sorted`. In this case, the original data structure is not touched, a copy is returned.
+Or we could use the built-in function `sorted`. In this case, the original data structure is not touched, a copy is returned.
 ```python
 sorted_odds = sorted(odds)
 print(sorted_odds)

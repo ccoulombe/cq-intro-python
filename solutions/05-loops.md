@@ -69,7 +69,7 @@ for num in odds:
     print(num)
 ```
 
-The improved version is calling the print fonction for each element of the sequence. The general form of a loop is (note the indentation):
+The improved version is calling the print function for each element of the sequence. The general form of a loop is (note the indentation):
 ```
 for element in sequence:
     do things using element
@@ -86,7 +86,7 @@ for banana in odds:
     print(banana)
 ```
 
-Here’s another loop that repeatedly updates a variable. In this example note the indentation of the `print` statement, indicating that it's outside the loop, therefore excuted after:
+Here’s another loop that repeatedly updates a variable. In this example note the indentation of the `print` statement, indicating that it's outside the loop, therefore executed after:
 ```python
 length = 0
 names = ['Curie', 'Darwin', 'Turing']

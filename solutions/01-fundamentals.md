@@ -74,10 +74,10 @@ Python has many types of data. Three common ones are:
 * floating point numbers (`float`)
 * strings (`str`)
 
-You may also come accross:
+You may also come across:
 - None
 - List
-- Booleans
+- Boolean
 - Dictionary
 - Set
 - Tuples
@@ -130,14 +130,14 @@ print(weight_lb)
 print(patient_id)
 ```
 
-When we want to make use of a function, referred to as calling the function, we follow its name by parentheses. The parentheses are important: if you leave them off, the function doesn’t actually run! Sometimes you will include values or variables inside the parentheses for the function to use. In the case of `print`, we use the parentheses to tell the function what value we want to display. We will learn more about how functions work and how to create our own in later chapter.
+When we want to make use of a function, referred to as calling the function, we follow its name by parentheses. The parentheses are important: if you leave them off, the function doesn’t actually run! Sometimes you will include values or variables inside the parentheses for the function to use. In the case of `print`, we use the parentheses to tell the function what value we want to display. We will learn more about how functions work and how to create our own in a later chapter.
 
 We can display multiple things at once using only one print call:
 ```python
 print(patient_id, 'weight in kilograms:', weight_kg)
 ```
 
-We can also embed another function call, for example if we'd print the value's data type:
+We can also embed another function call, for example if we printed the value's data type:
 ```python
 print(type(60.3))
 print(type(patient_id))

@@ -45,7 +45,7 @@ In order to load data, we need to access (import in Python terminology) a librar
 import numpy
 ```
 
-Importing a library makes its functionnalities available for us to use.
+Importing a library makes its functionalities available for us to use.
 
 Once we’ve imported the library, we can ask the library to read our data file for us:
 
@@ -242,6 +242,6 @@ data[0:3, 0:4]
 * Use `array[x, y]` to select a single element from a 2D numpy array.
 * Array indices start at `0`, not `1`.
 * Use `low:high` to specify a slice that includes the indices from `low` to `high-1`.
-* Use `# some kind of explanation` to add comments to programs.
+* Use `# some kind of explanation to add comments to programs.
 * Use `numpy.mean(array)`, `numpy.max(array)`, and `numpy.min(array)` to calculate simple statistics.
 * Use `numpy.mean(array, axis=0)` or `numpy.mean(array, axis=1)` to calculate statistics across the specified axis.
