@@ -95,7 +95,7 @@ Our functions can contain more than just code. We can document it with `docstrin
 A good coding style is [`numpydoc`](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard).
 
 ```python
-def fahr_to_celcius(temp):
+def fahr_to_celsius(temp):
     """
     Converts Fahrenheit to Celcius.
     
@@ -103,7 +103,7 @@ def fahr_to_celcius(temp):
         temp: Temperature in Fahr.
         
     Example: 
-        fahr_to_celcius(32) => 0.0
+        fahr_to_celsius(32) => 0.0
     """
     # this is a comment
     return ((temp - 32) * (5/9))
@@ -111,14 +111,14 @@ def fahr_to_celcius(temp):
 
 By documenting and commenting your functions, you help yourself and potential readers.
 ```python
-help(fahr_to_celcius)
+help(fahr_to_celsius)
 ```
 The `docstring` is printed when using the built-in `help` function, while comments are otherwise ignored.
 
 # Default Values
 We can also define default values to the function arguments.
 ```python
-def fahr_to_celcius(temp=32):
+def fahr_to_celsius(temp=32):
     """
     Converts Fahrenheit to Celcius.
     
@@ -126,17 +126,17 @@ def fahr_to_celcius(temp=32):
         temp: Temperature in Fahr. int, default: 32
         
     Example: 
-        fahr_to_celcius(32) => 0.0
+        fahr_to_celsius(32) => 0.0
     """
     return ((temp - 32) * (5/9))
 ```
 
 ```python tags=["empty"]
-fahr_to_celcius() # No argument given, the default value is used.
+fahr_to_celsius() # No argument given, the default value is used.
 ```
 The arguments can be given by their names (especially interesting when there are many arguments).
 ```python tags=["empty"]
-fahr_to_celcius(temp=0) 
+fahr_to_celsius(temp=0) 
 ```
 
 # Exercises
