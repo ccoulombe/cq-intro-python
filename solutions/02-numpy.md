@@ -178,7 +178,7 @@ print(numpy.max(patient_0))
 We don’t actually need to store the row in a variable of its own. We can call the function directly:
 
 ```python
-print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
+print('maximum inflammation for patient 3:', numpy.max(data[2, :]))
 ```
 
 
@@ -227,7 +227,7 @@ Print the second patient, 5th inflammation value:
 print(data[1,4])
 ```
 
-Print the first three patients, their first fourth inflammation values:
+Print the first three patients, their first four inflammation values:
 
 ```python tags=["empty"]
 data[0:3, 0:4]
