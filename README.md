@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/ccoulombe/cq-intro-python)
+
 # cq-intro-python
 Calcul Québec training : Introduction to Programming with Python - PYT101
 
