@@ -1,8 +1,13 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
+
 # cq-intro-python
 Calcul Québec training : Introduction to Programming with Python - PYT101
 
 # Content
 The content of this workshop is based on [Software Carpentries - Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/)
+
+# Run in Google Colab
+[Open In Colab](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
 
 # Run locally
 1. Create a virtual environment
