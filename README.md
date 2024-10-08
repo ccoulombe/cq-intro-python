@@ -7,13 +7,16 @@ Calcul Québec training : Introduction to Programming with Python - PYT101
 # Content
 The content of this workshop is based on [Software Carpentries - Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/)
 
-# Run in Google Colab
-[Open In Colab](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
+# How to run these notebooks ?
+You can run the notebooks in one the following ways, and run them at your own pace after the workshop.
 
-# Run in Binder
+## Run in Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
+
+## Run in Binder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccoulombe/cq-intro-python.git/HEAD)
 
-# Run locally
+## Run locally
 1. Create a virtual environment
 ```bash
 python -m venv venv-pyt101
