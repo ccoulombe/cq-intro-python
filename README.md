@@ -54,5 +54,5 @@ jupyter nbconvert --to notebook --inplace --execute solutions/*.ipynb
 ### 3. Empty notebooks for participants
 Empty all solutions notebooks and output in current directory
 ```bash
-python scripts/participant_empty.py solutions/*.ipynb -o .
+participant_empty solutions/*.ipynb -o .
 ```
