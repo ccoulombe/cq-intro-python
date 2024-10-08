@@ -1,4 +1,5 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccoulombe/cq-intro-python.git/HEAD)
 
 # cq-intro-python
 Calcul Québec training : Introduction to Programming with Python - PYT101
@@ -10,7 +11,7 @@ The content of this workshop is based on [Software Carpentries - Programming wit
 [Open In Colab](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
 
 # Run in Binder
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccoulombe/cq-intro-python/tree/main/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccoulombe/cq-intro-python.git/HEAD)
 
 # Run locally
 1. Create a virtual environment
