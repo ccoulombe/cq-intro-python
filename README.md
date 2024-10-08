@@ -9,6 +9,9 @@ The content of this workshop is based on [Software Carpentries - Programming wit
 # Run in Google Colab
 [Open In Colab](https://colab.research.google.com/github/ccoulombe/cq-intro-python)
 
+# Run in Binder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccoulombe/cq-intro-python/tree/main/HEAD)
+
 # Run locally
 1. Create a virtual environment
 ```bash
