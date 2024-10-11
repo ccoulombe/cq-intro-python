@@ -2,3 +2,5 @@ jupyter-book
 jupytext
 -r requirements.txt
 notebooks-helpers @ git+https://github.com/ccoulombe/notebooks-helpers.git
+pytest
+nbmake
