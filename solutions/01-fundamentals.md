@@ -167,12 +167,18 @@ age = 122
 mass = mass * 2.0
 age = age - 20
 ```
+```python tags=["empty"]
+print(mass,age)
+```
 
 #### 2. What are the data types of the following variables?
 ```python
 planet = 'Earth'
 apples = 5
 distance = 10.5
+```
+```python tags=["empty"]
+print(type(planet), type(apples), type(distance))
 ```
 
 ***
