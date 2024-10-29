@@ -143,3 +143,5 @@ It can be useful to write test cases to validate your code, and help think of co
 </div>
 
 **Bottom line** : it is best to understand what these tools suggests, before using them.
+
+![image](images/chatgpt.png)
