@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: solutions/00-introduction.md
+chapters:
+  - file: solutions/01-fundamentals.md
+  - file: solutions/02-numpy.md
+  - file: solutions/03-matplotlib.md
+  - file: solutions/04-lists.md
+  - file: solutions/05-loops.md
+  - file: solutions/06-choices.md
+  - file: solutions/07-functions.md
