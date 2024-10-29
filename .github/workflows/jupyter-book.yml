@@ -1,0 +1,50 @@
+name: Build Jupyter Book with GitHub pages
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  generate-book:
+    runs-on: ubuntu-latest
+    steps:
+    # https://github.com/actions/checkout
+    - name: Git checkout latest revision
+      uses: actions/checkout@v4
+
+    # https://github.com/actions/setup-python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        pip install -U pip
+        pip install -r requirements.txt -r requirements-dev.txt
+
+    # (optional) Cache your executed notebooks between runs
+    # if you have config:
+    # execute:
+    #   execute_notebooks: cache
+    - name: cache executed notebooks
+      uses: actions/cache@v3
+      with:
+        path: _build/.jupyter_cache
+        key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
+
+    # Build the book
+    - name: Build the book
+      run: |
+        jupyter-book build .
+
+    # Upload the book's HTML as an artifact
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: "_build/html"
+
+    # Deploy the book's HTML to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
