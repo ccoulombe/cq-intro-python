@@ -1,27 +1,26 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,md
-    notebook_metadata_filter: all
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.14.1
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.9.13
+jupytext:
+  formats: ipynb,md:myst
+  notebook_metadata_filter: all
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.16.4
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+language_info:
+  codemirror_mode:
+    name: ipython
+    version: 3
+  file_extension: .py
+  mimetype: text/x-python
+  name: python
+  nbconvert_exporter: python
+  pygments_lexer: ipython3
+  version: 3.9.13
 ---
 
 # Visualizing Tabular Data
@@ -36,32 +35,40 @@ Matplotlib documentation: https://matplotlib.org/stable/
 # Visualizing data
 
 In order to visualize data, we first need to import the library:
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 import matplotlib.pyplot
 ```
 
 We also need to load the data in this notebook:
-```python
+
+```{code-cell} ipython3
 import numpy
 data = numpy.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 ```
 
 We can now plot our data:
-```python
+
+```{code-cell} ipython3
 image = matplotlib.pyplot.imshow(data)
 matplotlib.pyplot.show()
 ```
+
 Each row in the heat map corresponds to a patient in the clinical trial dataset, and each column corresponds to a day in the dataset. Blue pixels in this heat map represent low values, while yellow pixels represent high values. As we can see, the general number of inflammation flare-ups for the patients rises and falls over a 40-day period.
 
 We can plot other kinds of graphs, for instance the average inflammation per day across all patients:
-```python
+
+```{code-cell} ipython3
 ave_inflammation = numpy.mean(data, axis=0)
 ave_plot = matplotlib.pyplot.plot(ave_inflammation)
 matplotlib.pyplot.show()
 ```
 
 Can we have a look at the maximum and minimum?
-```python
+
+```{code-cell} ipython3
 inflam_min = numpy.min(data, axis=0)
 inflam_max = numpy.max(data, axis=0)
 
@@ -74,7 +81,8 @@ matplotlib.pyplot.show()
 
 # Grouping plots
 We can group similar plots in a single figure using subplots. Here's a complete example:
-```python
+
+```{code-cell} ipython3
 import numpy
 import matplotlib.pyplot
 
