@@ -1,27 +1,26 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,md
-    notebook_metadata_filter: all
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.14.1
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.9.13
+jupytext:
+  formats: ipynb,md:myst
+  notebook_metadata_filter: all
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.16.4
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+language_info:
+  codemirror_mode:
+    name: ipython
+    version: 3
+  file_extension: .py
+  mimetype: text/x-python
+  name: python
+  nbconvert_exporter: python
+  pygments_lexer: ipython3
+  version: 3.9.13
 ---
 
 # Making Choices
@@ -35,25 +34,35 @@ jupyter:
 In life we make choices, it is not different in Python. We can express conditions with the `if` statement that, in turn, can be expressed by two values `True` or `False`, which are called `Booleans`.
 
 Documentation: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 True
 ```
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 False
 ```
+
 We can also construct `Booleans` from other values. For example, `False` and `True` are the equivalent of `0` and `1` respectively. 
 
 By default, objects are considered true, except the following built-in objects:
 - `None` and `False`
 - zero of any numeric type: `0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0,1)`
 - empty collections and sequences: `''`, `()`, `[]`, `{}`, `set()`, `range(0)`.
-```python
+
+```{code-cell} ipython3
 print(bool(1)) 
 print(bool(0))
 print(bool('Hello'))  # Anything other than zero length string is True
 ```
+
 We can also express conditions with relational operators:
-```python
+
+```{code-cell} ipython3
 print(1 == 1)
 print(2 != 1)
 print(1 < 0)
@@ -83,29 +92,42 @@ We can also express multiple conditions with the logical operators `and` or `or`
 | False | False | False  |
 
 And you can group expressions with `()`.
-```python
+
+```{code-cell} ipython3
 print(1 == 1 and 1 != 2)
 ```
 
 What will the following expression returns?
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 True and True
 ```
-```python
+
+```{code-cell} ipython3
 True and False and True
 ```
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 False or True
 ```
-```python
+
+```{code-cell} ipython3
 True or False and True
 ```
-```python
+
+```{code-cell} ipython3
 (False or False) and True
 ```
 
 With an `if` statement, we can decide on actions to do based on conditions:
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 num = 37
 if num > 100:
     print('greater')
@@ -113,12 +135,16 @@ else:
     print('not greater')
 print('done')
 ```
+
 The above can be visualized with:
 
 ![image](images/python-flowchart-conditional.png)
 
 We can also tests several conditions using an `elif` which means _else if_.
-```python tags=["raises-exception"]
+
+```{code-cell} ipython3
+:tags: [raises-exception]
+
 num = None
 if num > 100:
     print('greater')
@@ -128,8 +154,10 @@ else:
     print('not greater')
 print('done')
 ```
+
 As you can see the order of the conditions are very important as some relational operators cannot be used with `None`!
-```python
+
+```{code-cell} ipython3
 num = None
 if num is None:
     print('num is None')
@@ -151,7 +179,10 @@ Answer:
 2
 3
 ```
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 for i in range(10):
     if i < 4:
         print(i)
@@ -165,10 +196,13 @@ For the list `nums = [1, 111, 2, 3, 5, 8, 13, 2, 34, 55, 89]`, sort the elements
 
 Answer: `[1, 2, 3, 2] [111] [5, 8, 13, 34, 55, 89]`
 
-```python
+```{code-cell} ipython3
 nums = [1, 111, 2, 3, 5, 8, 13, 2, 34, 55, 89]
 ```
-```python tags=["empty"]
+
+```{code-cell} ipython3
+:tags: [empty]
+
 s = []
 g = []
 o = []
