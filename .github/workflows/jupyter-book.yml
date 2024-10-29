@@ -8,6 +8,9 @@ on:
 jobs:
   generate-book:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
     # https://github.com/actions/checkout
     - name: Git checkout latest revision
